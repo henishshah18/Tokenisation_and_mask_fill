@@ -82,9 +82,9 @@ Each prediction includes:
 
 | Algorithm | Space Representation | Approach | Token Count* |
 |-----------|---------------------|----------|--------------|
-| BPE (GPT-2) | `Ġ` prefix | Merge frequent pairs | Variable |
-| WordPiece (BERT) | `##` continuation | Linguistically aware | Variable |
-| SentencePiece (T5) | `▁` prefix | Probabilistic segmentation | Variable |
+| BPE (GPT-2) | `Ġ` prefix | Merge frequent pairs | 11 |
+| WordPiece (BERT) | `##` continuation | Linguistically aware | 11 |
+| SentencePiece (T5) | `▁` prefix | Probabilistic segmentation | 13 |
 
 *Token count depends on vocabulary and training data
 
