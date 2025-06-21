@@ -1,0 +1,89 @@
+{
+    "model_used": "microsoft/deberta-v3-large",
+    "approach_1_multiple_masks": [
+        {
+            "mask_position": 1,
+            "rank": 1,
+            "token": "HALF",
+            "score": 0.0013,
+            "sequence": "[CLS] The cat sat on the HALF because it was[MASK] .[SEP]"
+        },
+        {
+            "mask_position": 1,
+            "rank": 2,
+            "token": "biomechanical",
+            "score": 0.0012,
+            "sequence": "[CLS] The cat sat on the biomechanical because it was[MASK] .[SEP]"
+        },
+        {
+            "mask_position": 1,
+            "rank": 3,
+            "token": "a\u015f\u0131",
+            "score": 0.0008,
+            "sequence": "[CLS] The cat sat on thea\u015f\u0131 because it was[MASK] .[SEP]"
+        },
+        {
+            "mask_position": 2,
+            "rank": 1,
+            "token": "ACION",
+            "score": 0.0013,
+            "sequence": "[CLS] The cat sat on the[MASK] because it wasACION .[SEP]"
+        },
+        {
+            "mask_position": 2,
+            "rank": 2,
+            "token": "taproom",
+            "score": 0.0012,
+            "sequence": "[CLS] The cat sat on the[MASK] because it was taproom .[SEP]"
+        },
+        {
+            "mask_position": 2,
+            "rank": 3,
+            "token": "Iain",
+            "score": 0.001,
+            "sequence": "[CLS] The cat sat on the[MASK] because it was Iain .[SEP]"
+        }
+    ],
+    "approach_2_single_masks": {
+        "first_mask": [
+            {
+                "rank": 1,
+                "token": "HathiTrust",
+                "score": 0.0015,
+                "sequence": "The cat sat on the HathiTrust because it was tired."
+            },
+            {
+                "rank": 2,
+                "token": "GRP",
+                "score": 0.0011,
+                "sequence": "The cat sat on the GRP because it was tired."
+            },
+            {
+                "rank": 3,
+                "token": "divider",
+                "score": 0.0011,
+                "sequence": "The cat sat on the divider because it was tired."
+            }
+        ],
+        "second_mask": [
+            {
+                "rank": 1,
+                "token": "HathiTrust",
+                "score": 0.0016,
+                "sequence": "The cat sat on the mat because it was HathiTrust ."
+            },
+            {
+                "rank": 2,
+                "token": "hacienda",
+                "score": 0.0011,
+                "sequence": "The cat sat on the mat because it was hacienda ."
+            },
+            {
+                "rank": 3,
+                "token": "OBE",
+                "score": 0.001,
+                "sequence": "The cat sat on the mat because it was OBE ."
+            }
+        ]
+    }
+}
